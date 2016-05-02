@@ -1,0 +1,94 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: gzip - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\bnshah\LOCALS~1\Temp\RSP41.tmp" with contents
+[
+/nologo /ML /W3 /GX /Zi /O2 /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /FR"Release/" /Fp"Release/gzip.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\vss\ICS-MSL\Intel Software College\course components\vtune\VTuneBasics1\P4\windows\VTuneBasics1\gzip\bits.c"
+"C:\vss\ICS-MSL\Intel Software College\course components\vtune\VTuneBasics1\P4\windows\VTuneBasics1\gzip\crypt.c"
+"C:\vss\ICS-MSL\Intel Software College\course components\vtune\VTuneBasics1\P4\windows\VTuneBasics1\gzip\deflate.c"
+"C:\vss\ICS-MSL\Intel Software College\course components\vtune\VTuneBasics1\P4\windows\VTuneBasics1\gzip\getopt.c"
+"C:\vss\ICS-MSL\Intel Software College\course components\vtune\VTuneBasics1\P4\windows\VTuneBasics1\gzip\gzip.c"
+"C:\vss\ICS-MSL\Intel Software College\course components\vtune\VTuneBasics1\P4\windows\VTuneBasics1\gzip\inflate.c"
+"C:\vss\ICS-MSL\Intel Software College\course components\vtune\VTuneBasics1\P4\windows\VTuneBasics1\gzip\lzw.c"
+"C:\vss\ICS-MSL\Intel Software College\course components\vtune\VTuneBasics1\P4\windows\VTuneBasics1\gzip\trees.c"
+"C:\vss\ICS-MSL\Intel Software College\course components\vtune\VTuneBasics1\P4\windows\VTuneBasics1\gzip\unlzh.c"
+"C:\vss\ICS-MSL\Intel Software College\course components\vtune\VTuneBasics1\P4\windows\VTuneBasics1\gzip\unlzw.c"
+"C:\vss\ICS-MSL\Intel Software College\course components\vtune\VTuneBasics1\P4\windows\VTuneBasics1\gzip\unpack.c"
+"C:\vss\ICS-MSL\Intel Software College\course components\vtune\VTuneBasics1\P4\windows\VTuneBasics1\gzip\unzip.c"
+"C:\vss\ICS-MSL\Intel Software College\course components\vtune\VTuneBasics1\P4\windows\VTuneBasics1\gzip\util.c"
+"C:\vss\ICS-MSL\Intel Software College\course components\vtune\VTuneBasics1\P4\windows\VTuneBasics1\gzip\zip.c"
+]
+Creating command line "xicl6.exe @C:\DOCUME~1\bnshah\LOCALS~1\Temp\RSP41.tmp" 
+Creating temporary file "C:\DOCUME~1\bnshah\LOCALS~1\Temp\RSP42.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib winmm.lib /nologo /subsystem:console /incremental:no /pdb:"Release/gzip.pdb" /debug /machine:I386 /out:"Release/gzip.exe" /fixed:no 
+".\Release\bits.obj"
+".\Release\crypt.obj"
+".\Release\deflate.obj"
+".\Release\getopt.obj"
+".\Release\gzip.obj"
+".\Release\inflate.obj"
+".\Release\lzw.obj"
+".\Release\trees.obj"
+".\Release\unlzh.obj"
+".\Release\unlzw.obj"
+".\Release\unpack.obj"
+".\Release\unzip.obj"
+".\Release\util.obj"
+".\Release\zip.obj"
+]
+Creating command line "xilink6.exe @C:\DOCUME~1\bnshah\LOCALS~1\Temp\RSP42.tmp"
+<h3>Output Window</h3>
+Compiling...
+bits.c
+crypt.c
+deflate.c
+getopt.c
+gzip.c
+C:\vss\ICS-MSL\Intel Software College\course components\vtune\VTuneBasics1\P4\windows\VTuneBasics1\gzip\gzip.h(50) : warning C4005: 'ERROR' : macro redefinition
+        C:\NTDDK\INC\wingdi.h(98) : see previous definition of 'ERROR'
+inflate.c
+lzw.c
+trees.c
+unlzh.c
+unlzw.c
+unpack.c
+unzip.c
+util.c
+zip.c
+Linking...
+xilink6: executing 'C:\PROGRA~1\MICROS~3\VC98\Bin\link.exe'
+Creating temporary file "C:\DOCUME~1\bnshah\LOCALS~1\Temp\RSP44.tmp" with contents
+[
+/nologo /o"Release/gzip.bsc" 
+".\Release\bits.sbr"
+".\Release\crypt.sbr"
+".\Release\deflate.sbr"
+".\Release\getopt.sbr"
+".\Release\gzip.sbr"
+".\Release\inflate.sbr"
+".\Release\lzw.sbr"
+".\Release\trees.sbr"
+".\Release\unlzh.sbr"
+".\Release\unlzw.sbr"
+".\Release\unpack.sbr"
+".\Release\unzip.sbr"
+".\Release\util.sbr"
+".\Release\zip.sbr"]
+Creating command line "bscmake.exe @C:\DOCUME~1\bnshah\LOCALS~1\Temp\RSP44.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+gzip.exe - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

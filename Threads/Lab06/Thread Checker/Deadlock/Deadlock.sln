@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{EAF909A5-FA59-4C3D-9431-0FCC20D5BCF9}") = "Deadlock", "Deadlock.icproj", "{A11D70D2-25EB-48CB-BD50-0270A5D6FFED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A11D70D2-25EB-48CB-BD50-0270A5D6FFED}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A11D70D2-25EB-48CB-BD50-0270A5D6FFED}.Debug|Win32.Build.0 = Debug|Win32
+		{A11D70D2-25EB-48CB-BD50-0270A5D6FFED}.Release|Win32.ActiveCfg = Release|Win32
+		{A11D70D2-25EB-48CB-BD50-0270A5D6FFED}.Release|Win32.Build.0 = Release|Win32
+		{F7191D3E-2A9F-4A24-BDCB-215A3AD7259B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F7191D3E-2A9F-4A24-BDCB-215A3AD7259B}.Debug|Win32.Build.0 = Debug|Win32
+		{F7191D3E-2A9F-4A24-BDCB-215A3AD7259B}.Release|Win32.ActiveCfg = Release|Win32
+		{F7191D3E-2A9F-4A24-BDCB-215A3AD7259B}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

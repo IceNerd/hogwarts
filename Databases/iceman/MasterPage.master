@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Ice Maintenance System</title>
+<link href="~/App_Themes/Default/StyleSheet.css" rel="Stylesheet" type="text/css" />
+</head>
+
+<body>
+  <form id="form1" runat="server">
+    <div id="page_wrapper">
+      <div id="utility">
+      </div>
+      <div id="header_wrapper">
+      <a href="Default.aspx" >
+          <img alt="IceMan" border="none" src="header.png" /></div>
+      </a>
+      <div id="left_side">
+      <div id="newslist">
+        <ul>
+            <li><a href="Default.aspx">Home</a></li>
+            <br />
+            <asp:ContentPlaceHolder ID="navContent" runat="server" />
+        </ul>
+      </div>
+      </div>
+      
+      <div id="content">
+      <div class="post">
+        <asp:ContentPlaceHolder ID="mainContent" runat="server" />
+      </div>
+      </div>
+      
+      <div id="footer">
+      ©2008 PlusMinus Software
+      </div>
+    </div>
+ 
+  </form>
+</body>
+</html>

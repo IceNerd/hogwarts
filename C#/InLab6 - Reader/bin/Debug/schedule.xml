@@ -1,0 +1,17 @@
+<schedule>
+<class prefix="CST">
+<title>C#</title>
+<number>407</number>
+<credit>3</credit>
+</class>
+<class prefix="CST">
+<title>Database</title>
+<number>324</number>
+<credit>4</credit>
+</class>
+<class prefix="SPE">
+<title>Speech</title>
+<number>321</number>
+<credit>3</credit>
+</class>
+</schedule>

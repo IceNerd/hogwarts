@@ -1,0 +1,13 @@
+SCC = This is a Source Code Control file
+
+[gzip.dsp]
+SCC_Aux_Path = "Z:\"
+SCC_Project_Name = "$/Intel Software College/course components/PerformanceAnalysis/vtune_basics1/IA32/windows/VTuneBasics1/gzip", JQDAAAAA
+
+[gzip.dsw]
+SCC_Aux_Path = "Z:\"
+SCC_Project_Name = "$/Intel Software College/course components/PerformanceAnalysis/vtune_basics1/IA32/windows/VTuneBasics1/gzip", JQDAAAAA
+
+[gzip.mak]
+SCC_Aux_Path = "Z:\"
+SCC_Project_Name = "$/Intel Software College/course components/PerformanceAnalysis/vtune_basics1/IA32/windows/VTuneBasics1/gzip", JQDAAAAA

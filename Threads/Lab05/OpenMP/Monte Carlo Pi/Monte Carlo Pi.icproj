@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject 
+	ProjectType="Intel C++ Project"
+	Version="10.1"
+	Name="Monte Carlo Pi"
+	ProjectGUID="{3C8E044C-62A5-4655-B4F8-0B9054889AE7}"
+	VCNestedProjectGUID="{CF72D4D0-4F41-4774-8F56-0EA1217FEF0D}"
+	VCNestedProjectCRC32="1448705276"
+	VCNestedProjectFileName="Monte Carlo Pi.vcproj"
+	Keyword="Win32Proj">
+	<Platforms>
+		<Platform 
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration 
+			Name="Debug|Win32">
+			<Tool 
+				Name="GeneralTool"
+				OutputDirectory="$(SolutionDir)\Output\"
+				IntermediateDirectory="$(SolutionDir)\Output\$(ConfigurationName)"
+				ConfigurationType="1"
+				CharacterSet="2"/>
+			<Tool 
+				Name="CppCmplrTool"
+				Optimization="0"
+				AdditionalIncludeDirectories="&quot;C:\Program Files\Intel\MKL\10.0.3.021\include&quot;"
+				PreprocessorDefinitions="WIN32;_DEBUG;_CONSOLE"
+				MinimalRebuild="1"
+				BasicRuntimeChecks="3"
+				RuntimeLibrary="1"
+				UsePrecompiledHeader="0"
+				WarningLevel="3"
+				Detect64BitPortabilityProblems="1"
+				DebugInformationFormat="4"
+				OpenMP="0"/>
+			<Tool 
+				Name="LinkerTool"
+				OutputFile="$(OutDir)/$(ProjectName)_debug.exe"
+				AdditionalLibraryDirectories="&quot;C:\Program Files\Intel\MKL\10.0.3.021\ia32\lib&quot;"
+				AdditionalDependencies="libguide.lib mkl_c.lib"
+				GenerateDebugInformation="1"
+				ProgramDatabaseFile="$(IntDir)\$(ProjectName)_debug.pdb"
+				SubSystem="1"
+				ProfileGuidedDatabase="$(IntDir)\$(ProjectName)_debug.pgd"
+				ImportLibrary=""
+				TargetMachine="1"
+				DelayImpLib=""/>
+			<Tool 
+				Name="LibrarianTool"/>
+			<Tool 
+				Name="ResCmplrTool"/>
+			<Tool 
+				Name="MidlCmplrTool"/>
+			<Tool 
+				Name="BscMakeTool"/>
+			<Tool 
+				Name="PreBuildEventTool"/>
+			<Tool 
+				Name="PreLinkEventTool"/>
+			<Tool 
+				Name="PostBuildEventTool"/>
+			<Tool 
+				Name="CustomTool"/>
+			<Tool 
+				Name="CustomNodeTool"/>
+		</Configuration>
+		<Configuration 
+			Name="Release|Win32">
+			<Tool 
+				Name="GeneralTool"
+				OutputDirectory="Release"
+				IntermediateDirectory="Release"
+				ConfigurationType="1"
+				CharacterSet="2"/>
+			<Tool 
+				Name="CppCmplrTool"
+				AdditionalIncludeDirectories="&quot;C:\Program Files\Intel\MKL\8.0\include&quot;"
+				PreprocessorDefinitions="WIN32;NDEBUG;_CONSOLE"
+				RuntimeLibrary="0"
+				UsePrecompiledHeader="0"
+				WarningLevel="3"
+				Detect64BitPortabilityProblems="1"
+				DebugInformationFormat="3"/>
+			<Tool 
+				Name="LinkerTool"
+				OutputFile="$(OutDir)/Monte Carlo Pi.exe"
+				LinkIncremental="0"
+				AdditionalLibraryDirectories="&quot;C:\Program Files\Intel\MKL\8.0\ia32\lib&quot;"
+				AdditionalDependencies="mkl_c.lib"
+				GenerateDebugInformation="1"
+				SubSystem="1"
+				OptimizeReferences="2"
+				EnableCOMDATFolding="2"
+				TargetMachine="1"
+				DelayImpLib=""/>
+			<Tool 
+				Name="LibrarianTool"/>
+			<Tool 
+				Name="ResCmplrTool"/>
+			<Tool 
+				Name="MidlCmplrTool"/>
+			<Tool 
+				Name="BscMakeTool"/>
+			<Tool 
+				Name="PreBuildEventTool"/>
+			<Tool 
+				Name="PreLinkEventTool"/>
+			<Tool 
+				Name="PostBuildEventTool"/>
+			<Tool 
+				Name="CustomTool"/>
+			<Tool 
+				Name="CustomNodeTool"/>
+		</Configuration>
+	</Configurations>
+	<Files>
+		<File 
+			RelativePath=".\pimonte_VSL.c"/>
+	</Files>
+</VisualStudioProject>
+

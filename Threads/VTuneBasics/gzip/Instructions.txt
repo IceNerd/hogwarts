@@ -1,0 +1,10 @@
+GZIP details:
+Changes:
+	GZIP now does NOT remove the original file after compressing. gzip.c line 1636
+
+
+Command line arguments for GZIP executable
+to compress just type the filename:
+	gzip testfile.dat
+to decompress add -d
+	gzip -d testfile.dat.gz

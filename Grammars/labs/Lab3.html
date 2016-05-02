@@ -1,0 +1,265 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Generator" content="Microsoft Word 97">
+   <meta name="Template" content="C:\Program Files\Microsoft Office\Office\html.dot">
+   <meta name="GENERATOR" content="Mozilla/4.79 [en] (Windows NT 5.0; U) [Netscape]">
+   <title>CST 229 Introduction to Grammars</title>
+</head>
+<body link="#0000FF" vlink="#800080">
+
+<center><b>CST 229 Introduction to Grammars</b>
+<br><b>Lab #3</b>
+<br><b>Lexical Analyzer</b></center>
+
+<p>Your last program is to build a lexical analyzer (token recognizer)
+for a language of your choice.&nbsp; The language must be a Turing complete
+language, i.e., it must have a conditional construct of some sort (if,
+switch, etc.) and a looping construct of some sort (while, do-while, repeat,
+etc.).
+<p>Your task is to identify the tokens for the language and find out rules
+for defining those tokens.&nbsp; For instance, <b>Identifiers </b>in C++
+are language tokens used to identify variables, functions, methods or objects.&nbsp;
+Identifiers in C++ must start with a letter or an underscore and can contain
+upper and lowercase letters, digits and underscores.&nbsp; Other token
+types include:
+<ul>
+<li>
+Object methods and properties.</li>
+
+<li>
+Operators</li>
+
+<li>
+Keywords and reserved words</li>
+
+<li>
+Symbols</li>
+
+<li>
+Constants</li>
+</ul>
+The task of a lexical analyzer&nbsp; is to recognize legal tokens and identify
+errors in tokens. It doesn't need to check for syntax errors.
+<p><b><u>Input and Output</u></b>
+<ol>
+<li>
+Create at least 3 test files in the language of your choice.</li>
+
+<li>
+Read an input file and print out all tokens.</li>
+
+<li>
+Print out appropriate error message for illegal tokens.</li>
+</ol>
+Example:&nbsp; Her is a JavaScript code segment.
+<p><b>Input:</b>
+<p><font face="Courier New"><font size=-1>function printOddNumbers(x)</font></font>
+<br><font face="Courier New"><font size=-1>{&nbsp;&nbsp; var i = 0</font></font>
+<br><font face="Courier New"><font size=-1>&nbsp;&nbsp;&nbsp; var 9ab =
+43.50</font></font>
+<br><font face="Courier New"><font size=-1>&nbsp;&nbsp;&nbsp; while (i
+&lt; x</font></font>
+<br><font face="Courier New"><font size=-1>&nbsp;&nbsp;&nbsp; {</font></font>
+<br><font face="Courier New"><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+i++;</font></font>
+<br><font face="Courier New"><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+if ((i % 2) == 0)</font></font>
+<br><font face="Courier New"><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+continue</font></font>
+<br><font face="Courier New"><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+else</font></font>
+<br><font face="Courier New"><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+document.write(i, "\n")</font></font>
+<br><font face="Courier New"><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp; }</font></font>
+<br><font face="Courier New">}</font>
+<p><b><font size=-1>NOTE:</font> In this test program, the variable name
+9ab is illegal. The while loop is missing a right paren ')', however, the
+lexical analyzer is not responsible for catching that error.</b>
+<dir><b>Output:</b></dir>
+
+<center><table BORDER=0 CELLSPACING=0 CELLPADDING=7 WIDTH="601" >
+<tr>
+<td VALIGN=TOP WIDTH="40%"><b><font face="Courier New"><font size=-1>Token</font></font></b></td>
+
+<td VALIGN=TOP COLSPAN="2" WIDTH="18%"><b><font face="Courier New"><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Token type</font></font></b></td>
+
+<td VALIGN=TOP COLSPAN="3" WIDTH="55%">&nbsp;</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP COLSPAN="2" WIDTH="36%"><font face="Courier New"><font size=-1>function</font></font></td>
+
+<td VALIGN=TOP COLSPAN="3" WIDTH="29%"><font face="Courier New"><font size=-1>Keyword</font></font></td>
+
+<td VALIGN=TOP WIDTH="35%">&nbsp;</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP COLSPAN="2" WIDTH="36%"><font face="Courier New"><font size=-1>printOddNumbers</font></font></td>
+
+<td VALIGN=TOP COLSPAN="3" WIDTH="29%"><font face="Courier New"><font size=-1>Identifier</font></font></td>
+
+<td VALIGN=TOP WIDTH="35%">&nbsp;</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP COLSPAN="2" WIDTH="36%"><font face="Courier New"><font size=-1>(</font></font></td>
+
+<td VALIGN=TOP COLSPAN="3" WIDTH="29%"><font face="Courier New"><font size=-1>Symbol</font></font></td>
+
+<td VALIGN=TOP WIDTH="35%">&nbsp;</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP COLSPAN="2" WIDTH="36%"><font face="Courier New"><font size=-1>x</font></font></td>
+
+<td VALIGN=TOP COLSPAN="3" WIDTH="29%"><font face="Courier New"><font size=-1>Identifier</font></font></td>
+
+<td VALIGN=TOP WIDTH="35%">&nbsp;</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP COLSPAN="2" WIDTH="36%"><font face="Courier New"><font size=-1>)</font></font></td>
+
+<td VALIGN=TOP COLSPAN="3" WIDTH="29%"><font face="Courier New"><font size=-1>Symbol</font></font></td>
+
+<td VALIGN=TOP WIDTH="35%">&nbsp;</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP COLSPAN="2" WIDTH="36%"><font face="Courier New"><font size=-1>{</font></font></td>
+
+<td VALIGN=TOP COLSPAN="3" WIDTH="29%"><font face="Courier New"><font size=-1>Symbol</font></font></td>
+
+<td VALIGN=TOP WIDTH="35%">&nbsp;</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP COLSPAN="2" WIDTH="36%"><font face="Courier New"><font size=-1>var</font></font></td>
+
+<td VALIGN=TOP COLSPAN="3" WIDTH="29%"><font face="Courier New"><font size=-1>Keyword</font></font></td>
+
+<td VALIGN=TOP WIDTH="35%">&nbsp;</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP COLSPAN="2" WIDTH="36%"><font face="Courier New"><font size=-1>i</font></font></td>
+
+<td VALIGN=TOP COLSPAN="3" WIDTH="29%"><font face="Courier New"><font size=-1>Identifier</font></font></td>
+
+<td VALIGN=TOP WIDTH="35%">&nbsp;</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP COLSPAN="2" WIDTH="36%"><font face="Courier New"><font size=-1>=</font></font></td>
+
+<td VALIGN=TOP COLSPAN="3" WIDTH="29%"><font face="Courier New"><font size=-1>Operator</font></font></td>
+
+<td VALIGN=TOP WIDTH="35%">&nbsp;</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP COLSPAN="2" WIDTH="36%"><font face="Courier New"><font size=-1>0</font></font></td>
+
+<td VALIGN=TOP COLSPAN="3" WIDTH="29%"><font face="Courier New"><font size=-1>Integer</font></font></td>
+
+<td VALIGN=TOP WIDTH="35%">&nbsp;</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP COLSPAN="2" WIDTH="36%"><font face="Courier New"><font size=-1>var</font></font></td>
+
+<td VALIGN=TOP COLSPAN="3" WIDTH="29%"><font face="Courier New"><font size=-1>Keyword</font></font></td>
+
+<td VALIGN=TOP WIDTH="35%">&nbsp;</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP COLSPAN="2" WIDTH="36%"><font face="Courier New"><font size=-1>9ab</font></font></td>
+
+<td VALIGN=TOP COLSPAN="2" WIDTH="16%"><font face="Courier New"><font size=-1>ERROR</font></font></td>
+
+<td VALIGN=TOP COLSPAN="2" WIDTH="47%"><font face="Courier New"><font size=-1>Illegal
+identifier or integer</font></font></td>
+</tr>
+
+<tr>
+<td VALIGN=TOP COLSPAN="2" WIDTH="36%"><font face="Courier New"><font size=-1>=</font></font></td>
+
+<td VALIGN=TOP COLSPAN="3" WIDTH="29%"><font face="Courier New"><font size=-1>Operator</font></font></td>
+
+<td VALIGN=TOP WIDTH="35%">&nbsp;</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP COLSPAN="2" WIDTH="36%"><font face="Courier New"><font size=-1>43.50</font></font></td>
+
+<td VALIGN=TOP COLSPAN="3" WIDTH="29%"><font face="Courier New"><font size=-1>Float</font></font></td>
+
+<td VALIGN=TOP WIDTH="35%">&nbsp;</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP COLSPAN="2" WIDTH="36%"><font face="Courier New"><font size=-1>while</font></font></td>
+
+<td VALIGN=TOP COLSPAN="3" WIDTH="29%"><font face="Courier New"><font size=-1>Keyword</font></font></td>
+
+<td VALIGN=TOP WIDTH="35%">&nbsp;</td>
+</tr>
+
+<tr>
+<td VALIGN=TOP COLSPAN="2" WIDTH="36%"><font face="Courier New"><font size=-1>………</font></font></td>
+
+<td VALIGN=TOP COLSPAN="3" WIDTH="29%">&nbsp;</td>
+
+<td VALIGN=TOP WIDTH="35%">&nbsp;</td>
+</tr>
+</table></center>
+
+<p><b><u>Grading</u></b>
+<p>Your program will be graded based on the following criteria:
+<li>
+(85%) Completeness and Correctness (It meets the basic functional requirements.)</li>
+
+<li>
+(5%) Exception/Error Handling (It checks for unusual conditions.)</li>
+
+<li>
+(10%) Documentation (Program Overview and Function headers)</li>
+
+<br><b><u><font face="Times New Roman,Times"><font size=+1>Assignment Submission
+Guidelines</font></font></u></b>
+<ul><font color="#FF0000">NO LATE ASSIGNMENTS WILL BE ACCEPTED without
+prior approval from the instructor.</font>
+<br><font color="#FF0000">The instructor will send out an email upon receiving
+your assignment.&nbsp; If you do not receive an email within 24 hours of
+submitting the assignment, it is <b>YOUR</b> responsibility to contact
+the instructor by email or phone.&nbsp; If you do not contact the instructor
+within 48 hours after the due date, the assignment is considered late or
+unacceptable.</font> <font color="#FF0000">Late assignments must be submitted
+within one week of the due date.&nbsp; There will be a 20% penalty for
+late assignments.</font>
+<p>All handed-in assignment must be sent in the following format:
+<br>1.&nbsp; Zip up all .cpp, .h, .dsw, and .dsp files required to build
+the assignment.
+<br>2.&nbsp; In the archive, also include a “readme” file that lists all
+files included in the archive with a brief description of each file. The
+readme file should also contain installation instructions and instructions
+for running the program.
+<br>3.&nbsp; The archive will be attached to an email with subject line:
+<br>&nbsp;&nbsp; CST229 Assignment #3 – first name last name
+<br>4. Email the archive to yangs@oit.edu and yangs@open.org
+<p>Failure to do this will result in the assignment being discarded.</ul>
+
+<hr WIDTH="100%">
+<ul>
+<center>Fall 2003
+<br><font size=-1>Instructor:&nbsp; Dr. Sherry Yang</font>
+<br><font size=-1>Oregon Institute of Technology</font></center>
+</ul>
+
+</body>
+</html>

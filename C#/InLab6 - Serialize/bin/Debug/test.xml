@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Triangle xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Uno>1</Uno>
+  <Dos>2</Dos>
+</Triangle>

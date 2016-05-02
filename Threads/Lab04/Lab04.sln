@@ -1,0 +1,37 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HelloThreads", "Posix Threads\HelloThreads\HelloThreads.vcproj", "{32DF976A-1505-4DAC-9ABE-5CE80DA23A32}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "N_ThreadEvent", "Posix Threads\N_ThreadEvent\N_ThreadEvent.vcproj", "{7C66CDE1-FF08-4F96-94CD-89EFC86FDE81}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pi", "Posix Threads\Pi\Pi.vcproj", "{9BF5C5C2-AB69-456B-B016-95AAEE46A94B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Threaded", "Posix Threads\SemaphoreLab\Threaded.vcproj", "{0EB13E25-E255-45B6-AFC2-91382F71F25E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32DF976A-1505-4DAC-9ABE-5CE80DA23A32}.Debug|Win32.ActiveCfg = Debug|Win32
+		{32DF976A-1505-4DAC-9ABE-5CE80DA23A32}.Debug|Win32.Build.0 = Debug|Win32
+		{32DF976A-1505-4DAC-9ABE-5CE80DA23A32}.Release|Win32.ActiveCfg = Release|Win32
+		{32DF976A-1505-4DAC-9ABE-5CE80DA23A32}.Release|Win32.Build.0 = Release|Win32
+		{7C66CDE1-FF08-4F96-94CD-89EFC86FDE81}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7C66CDE1-FF08-4F96-94CD-89EFC86FDE81}.Debug|Win32.Build.0 = Debug|Win32
+		{7C66CDE1-FF08-4F96-94CD-89EFC86FDE81}.Release|Win32.ActiveCfg = Release|Win32
+		{7C66CDE1-FF08-4F96-94CD-89EFC86FDE81}.Release|Win32.Build.0 = Release|Win32
+		{9BF5C5C2-AB69-456B-B016-95AAEE46A94B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9BF5C5C2-AB69-456B-B016-95AAEE46A94B}.Debug|Win32.Build.0 = Debug|Win32
+		{9BF5C5C2-AB69-456B-B016-95AAEE46A94B}.Release|Win32.ActiveCfg = Release|Win32
+		{9BF5C5C2-AB69-456B-B016-95AAEE46A94B}.Release|Win32.Build.0 = Release|Win32
+		{0EB13E25-E255-45B6-AFC2-91382F71F25E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0EB13E25-E255-45B6-AFC2-91382F71F25E}.Debug|Win32.Build.0 = Debug|Win32
+		{0EB13E25-E255-45B6-AFC2-91382F71F25E}.Release|Win32.ActiveCfg = Release|Win32
+		{0EB13E25-E255-45B6-AFC2-91382F71F25E}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

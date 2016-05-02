@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[matrix.dsp]
+SCC_Aux_Path = "Z:\"
+SCC_Project_Name = "$/Intel Software College/course components/PerformanceAnalysis/vtune_basics1/IA32/windows/VTuneBasics1/matrix_optimized", LQDAAAAA
+
+[matrix.dsw]
+SCC_Aux_Path = "Z:\"
+SCC_Project_Name = "$/Intel Software College/course components/PerformanceAnalysis/vtune_basics1/IA32/windows/VTuneBasics1/matrix_optimized", LQDAAAAA

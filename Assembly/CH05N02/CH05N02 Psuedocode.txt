@@ -1,0 +1,24 @@
+declare strings
+create integer array
+
+main
+	initialize working regs to 0
+	set loop counter to 10
+	output integer prompt
+
+input loop:
+	input integer
+	store in current element
+	increment array offset
+	end input loop
+
+	reset loop counter
+	reset array offset
+	output display string
+
+output loop:
+	output current element
+	increment array offset
+	end output loop
+
+	exit to operating system

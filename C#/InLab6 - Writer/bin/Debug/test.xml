@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<XmlDoc>
+     <Number>1234</Number>
+     <String>Hola</String>
+     <Number>4321</Number>
+     <String>Adios</String>
+</XmlDoc>

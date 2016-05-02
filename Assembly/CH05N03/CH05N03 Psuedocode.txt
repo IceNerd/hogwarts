@@ -1,0 +1,23 @@
+declare prompts
+
+main
+	set x and y
+	clear screen
+	place cursor
+	output prompt 1
+	intput integer 1
+	save integer 1
+
+	reset x and y
+	place cursor
+	output prompt 2
+	intput integer 2
+	add integers
+	
+	reset x and y
+	place cursor
+	output sum statement and sum
+
+	exit to operating system
+
+end main

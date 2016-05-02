@@ -1,0 +1,138 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+SND_SELECT              WAVE                    "Option_Select.wav"
+SND_DONE                WAVE                    "Option_Done.wav"
+SND_HIT                 WAVE                    "Tile_Hit.wav"
+SND_WRONG               WAVE                    "Tile_Wrong.wav"
+SND_COMPLETE            WAVE                    "LVL_Complete.wav"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+TILE_DEFAULT            BITMAP                  "TILE_DEFAULT.bmp"
+ID_PM                   BITMAP                  "PlusMinusSmall.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+ID_DIALOG_ABOUT DIALOGEX 0, 0, 236, 146
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "About"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         112,IDC_STATIC,"Static",SS_BITMAP | WS_BORDER,7,7,71,65,
+                    WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "Done",IDOK,187,121,42,18
+    LTEXT           "Comboling was created by Jerome Lulling during the mid 80's while he was watching the tiles on his bathroom floor. ",
+                    IDC_STATIC,89,25,129,27
+    LTEXT           "Concept: Jerome Lulling",IDC_STATIC,124,87,80,10
+    LTEXT           "Programming:  Alberto Martinez",IDC_STATIC,124,98,105,
+                    10
+    LTEXT           "Art:  Alberto Martinez",IDC_STATIC,124,110,73,10
+    LTEXT           "www.PMSoft.org",IDC_STATIC,33,81,60,10
+    LTEXT           "www.JeromeLulling.com",IDC_STATIC,23,107,79,10
+    LTEXT           "www.Comboling.com",IDC_STATIC,31,116,70,10
+    LTEXT           "Plus Minus Software Group",IDC_STATIC,7,73,85,10
+    LTEXT           "Jerome Lulling and Comboling",IDC_STATIC,7,97,95,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    ID_DIALOG_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 229
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+ID_ICON                 ICON                    "icon1.ico"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

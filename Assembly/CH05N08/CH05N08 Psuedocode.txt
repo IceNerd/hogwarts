@@ -1,0 +1,27 @@
+create variable to multiply background with
+create variable to store counter
+
+main
+	set outer loop counter
+	initialize working regs to 0
+	
+foreground:
+	save outer loop counter
+	set inner loop counter
+
+background:
+	save background color
+	set eax as background
+	add eax/ebx to create back/foreground combo
+	set text color and display
+	restore eax as background
+	increment background color
+	end background loop
+
+	increment foreground color
+	restore outer loop count
+	end foreground loop
+
+	restore default colors
+	wait for user to press a key
+	exit to operating system
